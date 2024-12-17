@@ -1,40 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prayogaa Lab - Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Shakya Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to bottom, #ffffff, #f3f4f7);
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        section {
+            padding: 2rem 0;
+        }
+        .timeline {
+            position: relative;
+            margin-top: 2rem;
+            padding: 1rem 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: #007bff;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .timeline-event {
+            position: relative;
+            margin: 2rem 0;
+        }
+        .timeline-event .event-content {
+            position: relative;
+            width: 45%;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-event:nth-child(odd) .event-content {
+            left: 0;
+        }
+        .timeline-event:nth-child(even) .event-content {
+            left: 55%;
+        }
+        .timeline-event::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: #007bff;
+            border-radius: 50%;
+            top: 10px;
+            left: calc(50% - 8px);
+        }
+    </style>
 </head>
 <body>
-  <header class="bg-primary text-white text-center py-3">
-    <h1>Prayogaa Lab</h1>
-    <p>Innovations in Robotics, IoT, and Neurosurgery Research</p>
-  </header>
 
-  <main class="container my-5">
-    <section id="about">
-      <h2>About</h2>
-      <p>Welcome to my portfolio! I am working on cutting-edge projects in robotics, IoT, and medical research at AIIMS.</p>
-    </section>
+<header>
+    <h1>Akash Shakya</h1>
+    <p>Innovator | Researcher | Educator</p>
+</header>
 
-    <section id="projects" class="mt-5">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Hand Gesture-Controlled Car:</strong> ESP32-based Wi-Fi communication project.</li>
-        <li><strong>Robotic Arm:</strong> 3D kinematics with MPU 6050 sensors.</li>
-        <li><strong>Humidity Monitoring System:</strong> IoT-enabled real-time data tracking.</li>
-      </ul>
-    </section>
+<section class="container" id="about">
+    <h2 class="text-center">About Me</h2>
+    <p class="text-center">I am an electronics enthusiast with a passion for innovation and research. I specialize in robotics, IoT, and medical technology, and I run PrayogaaLab to inspire students through practical demonstrations of physics and electronics.</p>
+</section>
 
-    <section id="publications" class="mt-5">
-      <h2>Publications</h2>
-      <p>IEEE Journal of RFID: <a href="https://doi.org/10.1109/JRFID.2024.3457691" target="_blank">A Compact Slot-Based Bi-Directional UHF RFID Reader Antenna</a>.</p>
-    </section>
-  </main>
+<section class="container" id="education">
+    <h2 class="text-center">Education</h2>
+    <ul>
+        <li><strong>M.Sc. in Electronics (2022-2024)</strong> - University of Delhi, South Campus (CGPA: 8.479)</li>
+        <li><strong>B.Sc. (Honours) in Electronics (2017-2020)</strong> - Bhaskaracharya College of Applied Sciences</li>
+        <li><strong>Diploma in Computer Business Application (DCBA)</strong> - Indian Institute of Computer Sciences (CGPA: 7.324)</li>
+    </ul>
+</section>
 
-  <footer class="text-center bg-dark text-white py-3">
-    &copy; 2024 Prayogaa Lab
-  </footer>
+<section class="container" id="projects">
+    <h2 class="text-center">Projects</h2>
+    <ul>
+        <li><strong>EndoTrainer Endonasal Surgery Training Kit</strong>: Automating surgical training modules using STM32 and Raspberry Pi.</li>
+        <li><strong>UHF RFID</strong>: Studying Reader Antenna integration with commercial RFID modules.</li>
+        <li><strong>FM Receiver & Transmitter</strong>: Designed using GNU Radio and HackRF.</li>
+        <li><strong>SWANtenna'20 Design</strong>: Developed a dual-polarization antenna for low-frequency radio observations.</li>
+    </ul>
+</section>
+
+<section class="container" id="experience">
+    <h2 class="text-center">Work Experience</h2>
+    <div class="timeline">
+        <div class="timeline-event">
+            <div class="event-content">
+                <h4>Research Intern</h4>
+                <p>Neuro Engineering Lab, AIIMS (Sep 2024 - Present)</p>
+                <p>Developed endonasal surgical training kits, designed PCBs, and conducted clinical trials using advanced sensors and systems.</p>
+            </div>
+        </div>
+        <div class="timeline-event">
+            <div class="event-content">
+                <h4>Python Programming Internship</h4>
+                <p>CodeAlpha (July 2024)</p>
+                <p>Completed projects like Stock Portfolio Tracker, Chatbot, and Word Guess Game.</p>
+            </div>
+        </div>
+        <div class="timeline-event">
+            <div class="event-content">
+                <h4>Volunteer</h4>
+                <p>Vigyan Samagam (Jan 2024 - Mar 2024)</p>
+                <p>Volunteered on the Thirty Meter Telescope project during a national mega science exhibition.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container" id="skills">
+    <h2 class="text-center">Skills</h2>
+    <ul>
+        <li>PCB Designing: Altium, KiCad</li>
+        <li>Programming: Python, Embedded C, HTML</li>
+        <li>Data Visualization: Matplotlib, Plotly</li>
+        <li>Software Tools: Matlab, Multisim, Proteus</li>
+        <li>Embedded Systems: STM32, ESP32, Arduino</li>
+    </ul>
+</section>
+
+<section class="container" id="publications">
+    <h2 class="text-center">Publications</h2>
+    <ul>
+        <li>A Compact Slot-Based Bi-Directional UHF RFID Reader Antenna for Far-Field Applications, IEEE Journal of Radio Frequency Identification, DOI: <a href="https://doi.org/10.1109/JRFID.2024.3457691">10.1109/JRFID.2024.3457691</a></li>
+    </ul>
+</section>
+
+<footer class="text-center py-4 bg-dark text-white">
+    <p>&copy; 2024 Akash Shakya. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
