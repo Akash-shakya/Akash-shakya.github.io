@@ -93,7 +93,7 @@
             }
             100% {
                 opacity: 0;
-                transform: translate(calc(100vw * (0.5 - random())), calc(100vh * (0.5 - random())));
+                transform: translate(calc(50vw * (0.5 - random())), calc(50vh * (0.5 - random())));
             }
         }
     </style>
@@ -105,80 +105,133 @@
     <p>Innovator | Researcher | Educator</p>
 </header>
 
-<section id="about-me" class="features" style="margin-top: 0;"> 
-    <div class="container" id="i18_about_me"> 
-        <div class="row m-b-lg"> 
-            <div class="col-lg-12 text-center"> 
-                <div class="navy-line"></div> 
-                <h1><span data-i18n="about_me.about_me">About Me</span></h1> 
-            </div> 
-        </div> 
-        <div class="row"> 
-            <!-- first two icons --> 
-            <div class="col-xs-2 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;"> 
-                <div class="team-member"> 
-                    <div class="vote-icon" style="text-align: center"> 
-                        <i class="fa fa-cogs"></i> 
-                    </div> 
-                </div> 
-            </div> 
-            <div class="col-xs-2 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;"> 
-                <div class="team-member"> 
-                    <div class="vote-icon" style="text-align: center"> 
-                        <i class="fa fa-robot"></i> 
-                    </div> 
-                </div> 
-            </div> 
-            <!-- avatar --> 
-            <div class="col-xs-4"> 
-                <div class="team-member wow zoomIn" style="visibility: visible; animation-name: zoomIn;"> 
-                    <img src="/static/assets/img/landing/my_pic.jpg" height="110" width="110" class="img-responsive img-circle" alt="My Picture"> 
-                    <h4><span class="navy">Your Name</span></h4> 
-                    <ul class="list-inline social-icon"> 
-                        <li><a href="https://github.com/your-github" target="_blank"><i class="fa fa-github"></i></a></li> 
-                        <li><a href="https://www.linkedin.com/in/your-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
-                        <li><a href="mailto:your-email@example.com"><i class="fa fa-envelope-o"></i></a></li> 
-                        <li><a href="your-cv-link.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a></li> 
-                    </ul> 
-                </div> 
-            </div> 
-            <!-- second two icons --> 
-            <div class="col-xs-2 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;"> 
-                <div class="team-member"> 
-                    <div class="vote-icon" style="text-align: center"> 
-                        <i class="fa fa-wifi"></i> 
-                    </div> 
-                </div> 
-            </div> 
-            <div class="col-xs-2 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;"> 
-                <div class="team-member"> 
-                    <div class="vote-icon" style="text-align: center"> 
-                        <i class="fa fa-microchip"></i> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-        <div class="row"> 
-            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg wow zoomIn" style="visibility: visible; animation-name: zoomIn;"> 
+<section id="about-me" class="features">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-12 text-center">
+                <h1>About Me</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 text-center">
+                <i class="fa fa-cogs fa-2x"></i>
+            </div>
+            <div class="col-2 text-center">
+                <i class="fa fa-robot fa-2x"></i>
+            </div>
+            <div class="col-4 text-center">
+                <img src="/static/assets/img/landing/my_pic.jpg" alt="Profile Picture" height="110" width="110" class="img-circle">
+                <h4>Akash Shakya</h4>
+                <ul class="list-inline">
+                    <li><a href="https://github.com/your-github" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/your-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="mailto:your-email@example.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-2 text-center">
+                <i class="fa fa-wifi fa-2x"></i>
+            </div>
+            <div class="col-2 text-center">
+                <i class="fa fa-microchip fa-2x"></i>
+            </div>
+        </div>
+        <div class="row mt-4 text-center">
+            <div class="col-lg-8 offset-lg-2">
                 <p>
-                    <span data-i18n="about_me.des">
-                        I am passionate about robotics, electronics, and embedded systems development. My expertise includes developing sensor-based systems, robotic arm control, IoT projects, and creating scientific experiments. I also manage an institute, Prayogaa Lab, where we foster hands-on learning and innovation in STEM fields.
-                    </span>
-                </p> 
-            </div> 
-        </div> 
-    </div> 
+                    I am passionate about robotics, electronics, and embedded systems development. My expertise includes developing sensor-based systems, robotic arm control, IoT projects, and creating scientific experiments. I also manage Prayogaa Lab, fostering hands-on learning and innovation in STEM fields.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
 
-
-<section class="container" id="education">
-    <h2 class="text-center">Education</h2>
-    <ul>
-        <li><strong>M.Sc. in Electronics (2022-2024)</strong> - University of Delhi, South Campus (CGPA: 8.479)</li>
-        <li><strong>B.Sc. (Honours) in Electronics (2017-2020)</strong> - Bhaskaracharya College of Applied Sciences</li>
-        <li><strong>Diploma in Computer Business Application (DCBA)</strong> - Indian Institute of Computer Sciences (CGPA: 7.324)</li>
-    </ul>
+<section class="interactive-image" id="interactiveImage">
+    <p>Hover to see the current flow effect.</p>
 </section>
+
+<!-- Education Start -->
+<section id="education" class="education">
+    <div class="section-heading text-center">
+        <h2>Education</h2>
+    </div>
+    <div class="container">
+        <div class="education-horizontal-timeline">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="single-horizontal-timeline">
+                        <div class="experience-time">
+                            <h2>2022 - 2024</h2>
+                            <h3>Master <span>of</span> Science in Electronics</h3>
+                        </div><!--/.experience-time-->
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal"></span>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <h4 class="title">
+                                    University of Delhi, South Campus
+                                </h4>
+                                <h5>Delhi, India</h5>
+                                <p class="description">
+                                    Graduated with a CGPA of 8.479. Developed expertise in RFID, IoT, embedded systems, and electronics. Conducted research in advanced antenna design and hands-on projects.
+                                </p>
+                            </div><!--/.timeline-content-->
+                        </div><!--/.timeline-->
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single-horizontal-timeline">
+                        <div class="experience-time">
+                            <h2>2017 - 2020</h2>
+                            <h3>Bachelor <span>of</span> Science (Honours) in Electronics</h3>
+                        </div><!--/.experience-time-->
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal"></span>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <h4 class="title">
+                                    Bhaskaracharya College of Applied Sciences
+                                </h4>
+                                <h5>Delhi, India</h5>
+                                <p class="description">
+                                    Acquired foundational knowledge in electronics, circuit design, and programming. Participated in academic projects and workshops to enhance practical skills.
+                                </p>
+                            </div><!--/.timeline-content-->
+                        </div><!--/.timeline-->
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single-horizontal-timeline">
+                        <div class="experience-time">
+                            <h2>2015 - 2016</h2>
+                            <h3>Diploma <span>in</span> Computer Business Applications</h3>
+                        </div><!--/.experience-time-->
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal spacial-horizontal-line"></span>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <h4 class="title">
+                                    Indian Institute of Computer Sciences
+                                </h4>
+                                <h5>India</h5>
+                                <p class="description">
+                                    Graduated with a CGPA of 7.324. Focused on computer fundamentals, business applications, and software tools to build a strong technical foundation.
+                                </p>
+                            </div><!--/.timeline-content-->
+                        </div><!--/.timeline-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Education End -->
+
 
 <section class="container" id="projects">
     <h2 class="text-center">Projects</h2>
@@ -186,52 +239,6 @@
         <li><strong>EndoTrainer Endonasal Surgery Training Kit</strong>: Automating surgical training modules using STM32 and Raspberry Pi.</li>
         <li><strong>UHF RFID</strong>: Studying Reader Antenna integration with commercial RFID modules.</li>
         <li><strong>FM Receiver & Transmitter</strong>: Designed using GNU Radio and HackRF.</li>
-        <li><strong>SWANtenna'20 Design</strong>: Developed a dual-polarization antenna for low-frequency radio observations.</li>
-    </ul>
-</section>
-
-<section class="container" id="experience">
-    <h2 class="text-center">Work Experience</h2>
-    <div class="timeline">
-        <div class="timeline-event">
-            <div class="event-content">
-                <h4>Research Intern</h4>
-                <p>Neuro Engineering Lab, AIIMS (Sep 2024 - Present)</p>
-                <p>Developed endonasal surgical training kits, designed PCBs, and conducted clinical trials using advanced sensors and systems.</p>
-            </div>
-        </div>
-        <div class="timeline-event">
-            <div class="event-content">
-                <h4>Python Programming Internship</h4>
-                <p>CodeAlpha (July 2024)</p>
-                <p>Completed projects like Stock Portfolio Tracker, Chatbot, and Word Guess Game.</p>
-            </div>
-        </div>
-        <div class="timeline-event">
-            <div class="event-content">
-                <h4>Volunteer</h4>
-                <p>Vigyan Samagam (Jan 2024 - Mar 2024)</p>
-                <p>Volunteered on the Thirty Meter Telescope project during a national mega science exhibition.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="container" id="skills">
-    <h2 class="text-center">Skills</h2>
-    <ul>
-        <li>PCB Designing: Altium, KiCad</li>
-        <li>Programming: Python, Embedded C, HTML</li>
-        <li>Data Visualization: Matplotlib, Plotly</li>
-        <li>Software Tools: Matlab, Multisim, Proteus</li>
-        <li>Embedded Systems: STM32, ESP32, Arduino</li>
-    </ul>
-</section>
-
-<section class="container" id="publications">
-    <h2 class="text-center">Publications</h2>
-    <ul>
-        <li>A Compact Slot-Based Bi-Directional UHF RFID Reader Antenna for Far-Field Applications, IEEE Journal of Radio Frequency Identification, DOI: <a href="https://doi.org/10.1109/JRFID.2024.3457691">10.1109/JRFID.2024.3457691</a></li>
     </ul>
 </section>
 
@@ -242,18 +249,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script>
     const interactiveImage = document.getElementById('interactiveImage');
-
     interactiveImage.addEventListener('mousemove', (e) => {
         const flow = document.createElement('div');
-        flow.classList.add('current-flow');
-        flow.style.left = ${e.clientX}px;
-        flow.style.top = ${e.clientY}px;
+        flow.className = 'current-flow';
+        flow.style.left = `${e.clientX}px`;
+        flow.style.top = `${e.clientY}px`;
         interactiveImage.appendChild(flow);
 
-        setTimeout(() => {
-            flow.remove();
-        }, 1000);
+        setTimeout(() => flow.remove(), 1000);
     });
 </script>
+
 </body>
 </html>
