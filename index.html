@@ -7,6 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
@@ -54,6 +55,50 @@
         .timeline-event:nth-child(odd) .event-content {
             left: 0;
         }
+                /* Style for horizontal line under the heading */
+        .horizontal-line {
+            width: 100px;
+            height: 3px;
+            background-color: #4CAF50;
+            margin: 20px auto;
+        }
+
+        /* Timeline Animation */
+        .single-experience-timeline {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-horizontal-border {
+            position: relative;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .timeline-horizontal-border i {
+            font-size: 20px;
+            color: #4CAF50;
+        }
+
+        .timeline-horizontal-border .single-timeline-horizontal {
+            border-bottom: 2px solid #4CAF50;
+            display: inline-block;
+            width: 60%;
+        }
+
+        .timeline-content h4.title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .timeline-content .description {
+            font-size: 0.9em;
+            color: #555;
+        }
+
         .timeline-event:nth-child(even) .event-content {
             left: 55%;
         }
@@ -232,6 +277,89 @@
 </section>
 <!-- Education End -->
 
+<!-- Experience Start -->
+<section id="experience" class="experience">
+    <div class="section-heading text-center">
+        <h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Experience</h2>
+        <hr class="horizontal-line wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+    </div>
+
+    <div class="container">
+        <div class="experience-timeline">
+            <div class="row">
+                <!-- Experience Item 1 -->
+                <div class="col-sm-4">
+                    <div class="single-experience-timeline wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="experience-time">
+                            <h2>2024 - Present</h2>
+                            <h3>Research Intern</h3>
+                        </div><!--/.experience-time-->
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="title">
+                                AIIMS, New Delhi
+                            </h4>
+                            <h5>New Delhi, India</h5>
+                            <p class="description">
+                                Working in the Neurosurgery Department, assisting in research related to neural interfaces and rehabilitation technologies. Gaining hands-on experience in medical electronics and data analysis.
+                            </p>
+                        </div><!--/.timeline-content-->
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="col-sm-4">
+                    <div class="single-experience-timeline wow slideInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+                        <div class="experience-time">
+                            <h2>2022 - 2024</h2>
+                            <h3>Graduate Research Assistant</h3>
+                        </div><!--/.experience-time-->
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="title">
+                                University of Delhi, South Campus
+                            </h4>
+                            <h5>Delhi, India</h5>
+                            <p class="description">
+                                Conducted research on RFID technology and IoT applications in healthcare, including designing and testing RFID reader antennas for far-field communication.
+                            </p>
+                        </div><!--/.timeline-content-->
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="col-sm-4">
+                    <div class="single-experience-timeline wow slideInRight" data-wow-duration="1s" data-wow-delay="0.9s">
+                        <div class="experience-time">
+                            <h2>2020 - 2022</h2>
+                            <h3>Electronics Engineer</h3>
+                        </div><!--/.experience-time-->
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="title">
+                                XYZ Technologies Pvt. Ltd.
+                            </h4>
+                            <h5>Delhi, India</h5>
+                            <p class="description">
+                                Worked on the design and development of embedded systems, focusing on PCB design, microcontroller programming, and sensor integration for IoT solutions.
+                            </p>
+                        </div><!--/.timeline-content-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Experience End -->
 
 <section class="container" id="projects">
     <h2 class="text-center">Projects</h2>
