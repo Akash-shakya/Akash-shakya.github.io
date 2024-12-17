@@ -67,6 +67,35 @@
             top: 10px;
             left: calc(50% - 8px);
         }
+
+        /* Interactive image with current flow effect */
+        .interactive-image {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: url('https://via.placeholder.com/1200x300') no-repeat center center/cover;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .current-flow {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: yellow;
+            border-radius: 50%;
+            animation: flow 1s linear infinite;
+            opacity: 0;
+        }
+        @keyframes flow {
+            0% {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(calc(100vw * (0.5 - random())), calc(100vh * (0.5 - random())));
+            }
+        }
     </style>
 </head>
 <body>
@@ -75,6 +104,10 @@
     <h1>Akash Shakya</h1>
     <p>Innovator | Researcher | Educator</p>
 </header>
+
+<div class="interactive-image" id="interactiveImage">
+    <!-- Current flow particles will be appended here dynamically -->
+</div>
 
 <section class="container" id="about">
     <h2 class="text-center">About Me</h2>
@@ -150,5 +183,20 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    const interactiveImage = document.getElementById('interactiveImage');
+
+    interactiveImage.addEventListener('mousemove', (e) => {
+        const flow = document.createElement('div');
+        flow.classList.add('current-flow');
+        flow.style.left = `${e.clientX}px`;
+        flow.style.top = `${e.clientY}px`;
+        interactiveImage.appendChild(flow);
+
+        setTimeout(() => {
+            flow.remove();
+        }, 1000);
+    });
+</script>
 </body>
 </html>
