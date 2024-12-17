@@ -105,10 +105,6 @@
     <p>Innovator | Researcher | Educator</p>
 </header>
 
-<div class="interactive-image" id="interactiveImage">
-    <!-- Current flow particles will be appended here dynamically -->
-</div>
-
 <section id="about-me" class="features" style="margin-top: 0;"> 
     <div class="container" id="i18_about_me"> 
         <div class="row m-b-lg"> 
@@ -250,8 +246,8 @@
     interactiveImage.addEventListener('mousemove', (e) => {
         const flow = document.createElement('div');
         flow.classList.add('current-flow');
-        flow.style.left = `${e.clientX}px`;
-        flow.style.top = `${e.clientY}px`;
+        flow.style.left = ${e.clientX}px;
+        flow.style.top = ${e.clientY}px;
         interactiveImage.appendChild(flow);
 
         setTimeout(() => {
